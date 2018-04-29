@@ -1,0 +1,307 @@
+
+/*- - - - - - - - - HTML ELEMENTS*/
+  body {
+    margin: 0!important;
+  }
+
+  h1{
+    font-size: 5.3rem!important;
+    line-height: 1.8;
+  }
+
+
+/*- - - - - - - - - LANDING BANNER*/
+
+  .banner-greeting {
+    background-color: black;
+    color: white;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+  }
+
+  .banner-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    height: 80vh;
+  }
+
+  .icon-links {
+   /* position: absolute;
+    top: 8rem;
+    right: 9rem;*/
+    margin-bottom: 2rem;
+  }
+
+  .menu-link {
+    display: inline;
+    margin: 1rem;
+   }
+
+   .menu-link-icon{
+    width: 4rem;
+    height: 4rem;
+   }
+
+   .landing-text{
+  /*  position: absolute;
+    bottom: 8rem;
+    right: 9rem;*/
+   }
+
+
+/*- - - - - - - - - - - WORK PORTFOLIO GRID*/
+
+  .work-grid {
+    position: relative;
+    z-index: 99;
+
+  }
+
+  .work-card {
+
+  }
+
+  .card-image{
+    width: 50%:;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card-image:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+
+/*- - - - - - - - - - - PORTFOLIO OVERLAY*/
+
+  .portfolio-links {
+    margin: 2rem;
+  }
+
+  .portfolio-link{
+    display: inline-block;
+  }
+
+  .portfolio-link-icon{
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem;
+  }
+
+  .portfolio-tags{
+    font-weight: bold;
+  }
+
+   .circle {
+    width: 32px;
+    height:32px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 1rem;
+   }
+
+   .menu-icon {
+
+   }
+
+
+
+  .footer-left{
+    background-color: black;
+    color: white;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .close-window {
+    position: absolute;
+    top: 2.5rem;
+    right: 4rem;
+  }
+
+  .portfolio-left{
+    text-align: right;
+    margin-right: 2rem;
+  }
+
+  .portfolio-right{
+    margin-top: 5rem;
+  }
+
+  .circle {
+    border-radius: 50%;
+    background-color: black;
+  }
+
+  .portfolio-center{
+   /* align-items: center;*/
+    margin-top: 5rem;
+  }
+
+  .youtube-frame{
+    border: 10px solid black;
+    border-radius: 5px;
+    min-height: 667px;
+    min-width: 375px;
+  }
+
+  .youtube-frame {
+    position: relative;
+    padding-bottom: 65%;
+    padding-top: 30px; height: 0; overflow: hidden;
+  }
+
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .video iframe,
+  .video object,
+  .video embed {
+    position: absolute;
+    top: -75%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .portfolio-text{
+    max-width: 20rem;
+  }
+
+
+  .portfolio-section{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;
+  }
+
+/*- - - - - - - - BOOTSTRAP OVERRIDES*/
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  padding: 0!important;
+}
+
+
+/*/*- - - - - - - - - -OVERLAY EXPERIMENT*/
+
+input {
+  display: none;
+}
+
+.click-yaochima {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.portfolio-overlay{
+   padding: 2rem;
+  /*position: relative;*/
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255,255,255,1);
+  overflow-y: scroll;
+}
+
+.portfolio-overlay label{
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.card-label{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  /*border: 1px solid blue;*/
+}
+
+.card-image{
+  text-align: center;
+}
+
+
+.click-yaochima~.portfolio-overlay{
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+#op:checked~.portfolio-overlay{
+  z-index: 88;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+
+
+/* - - MEDIA - -  */
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+  .float_left {
+    float: none;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+/*  p:hover {
+  color: #16087C;
+  font-size: 15px;
+ }*/
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 340px;
+  }
+}
+
+
+
