@@ -146,8 +146,14 @@
   }
 
   .portfolio-center{
-   /* align-items: center;*/
     margin-top: 5rem;
+  }
+
+  .portfolio-center>span{
+    font-size:.5rem;
+    font-style: italic;
+    text-align: center;
+    margin: 1rem;
   }
 
   .youtube-frame{
