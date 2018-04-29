@@ -101,13 +101,13 @@
     font-weight: bold;
   }
 
-   .circle {
+ /*  .circle {
     width: 32px;
     height:32px;
     border-radius: 50%;
     background-color: black;
     margin: 1rem;
-   }
+   }*/
 
    .menu-icon {
 
@@ -140,10 +140,10 @@
     margin-top: 5rem;
   }
 
-  .circle {
+ /* .circle {
     border-radius: 50%;
     background-color: black;
-  }
+  }*/
 
   .portfolio-center{
     margin-top: 5rem;
@@ -274,9 +274,90 @@ input {
   transition: opacity 0.5s;
 }
 
+/*- - - - - - - - - - STICKER MODAL*/
 
+.click-sticker~.portfolio-overlay{
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .5s, visibility 0s 0.5s;
+  transition: opacity .5s, visibility 0s .5s;
+}
 
-/* - - MEDIA - -  */
+#stickermodal:checked~.portfolio-overlay{
+  z-index: 89;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+/*- - - - - - - - JOURNEY MODAL*/
+
+.click-journey~.portfolio-overlay{
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .5s, visibility 0s 0.5s;
+  transition: opacity .5s, visibility 0s .5s;
+}
+
+#journeymodal:checked~.portfolio-overlay{
+  z-index: 89;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+/*- - - - - - - - FREELANCE MODAL*/
+.click-freelance~.portfolio-overlay{
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .5s, visibility 0s 0.5s;
+  transition: opacity .5s, visibility 0s .5s;
+}
+
+#freelancemodal:checked~.portfolio-overlay{
+  z-index: 89;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+/*- - - - - - - - - LEWAGON MODAL*/
+.click-lewagon~.portfolio-overlay{
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .5s, visibility 0s 0.5s;
+  transition: opacity .5s, visibility 0s .5s;
+}
+
+#lewagonmodal:checked~.portfolio-overlay{
+  z-index: 89;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+/*- - - - - - - - - HORIZONS MODAL*/
+
+.click-horizons~.portfolio-overlay{
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .5s, visibility 0s 0.5s;
+  transition: opacity .5s, visibility 0s .5s;
+}
+
+#horizonsmodal:checked~.portfolio-overlay{
+  z-index: 89;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+/* - - MEDIA - -
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
