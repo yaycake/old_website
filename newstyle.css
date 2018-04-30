@@ -101,14 +101,6 @@
     font-weight: bold;
   }
 
- /*  .circle {
-    width: 32px;
-    height:32px;
-    border-radius: 50%;
-    background-color: black;
-    margin: 1rem;
-   }*/
-
    .menu-icon {
 
    }
@@ -208,7 +200,7 @@
 }
 
 
-/*/*- - - - - - - - - -OVERLAY EXPERIMENT*/
+/*/*- - - - - - - - - -PORTFOLIO OVERLAY*/
 
 input {
   display: none;
@@ -220,6 +212,9 @@ input {
   align-items: center;
 }
 
+.portfolio-links>ul{
+  list-style: none;
+}
 
 .portfolio-overlay{
    padding: 2rem;
@@ -251,15 +246,13 @@ input {
   bottom: 0;
   width: 100%;
   height: auto;
-  /*border: 1px solid blue;*/
 }
 
 .card-image{
   text-align: center;
 }
 
-
-.click-yaochima~.portfolio-overlay{
+.click-yaochima~.portfolio-overlay {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
