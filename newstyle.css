@@ -153,9 +153,6 @@
     border-radius: 5px;
     min-height: 667px;
     min-width: 375px;
-  }
-
-  .youtube-frame {
     position: relative;
     padding-bottom: 65%;
     padding-top: 30px; height: 0; overflow: hidden;
@@ -182,7 +179,9 @@
   }
 
   .portfolio-text{
-    max-width: 20rem;
+    max-width: 30rem;
+    min-width: 20rem;
+
   }
 
 
@@ -195,10 +194,10 @@
   }
 
 /*- - - - - - - - BOOTSTRAP OVERRIDES*/
-.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
-  padding: 0!important;
-}
 
+.work-grid>.row>.col-xs-12.col-sm-6.col-md-4.col-lg-4{
+   padding: 0!important;
+}
 
 /*/*- - - - - - - - - -PORTFOLIO OVERLAY*/
 
@@ -269,86 +268,102 @@ input {
 
 /*- - - - - - - - - - STICKER MODAL*/
 
-.click-sticker~.portfolio-overlay{
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity .5s, visibility 0s 0.5s;
-  transition: opacity .5s, visibility 0s .5s;
-}
+  .click-sticker~.portfolio-overlay{
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .5s, visibility 0s 0.5s;
+    transition: opacity .5s, visibility 0s .5s;
+  }
 
-#stickermodal:checked~.portfolio-overlay{
-  z-index: 89;
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
+  #stickermodal:checked~.portfolio-overlay{
+    z-index: 89;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
 
 /*- - - - - - - - JOURNEY MODAL*/
 
-.click-journey~.portfolio-overlay{
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity .5s, visibility 0s 0.5s;
-  transition: opacity .5s, visibility 0s .5s;
-}
+  .click-journey~.portfolio-overlay{
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .5s, visibility 0s 0.5s;
+    transition: opacity .5s, visibility 0s .5s;
+  }
 
-#journeymodal:checked~.portfolio-overlay{
-  z-index: 89;
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
+  #journeymodal:checked~.portfolio-overlay{
+    z-index: 89;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
 
 /*- - - - - - - - FREELANCE MODAL*/
-.click-freelance~.portfolio-overlay{
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity .5s, visibility 0s 0.5s;
-  transition: opacity .5s, visibility 0s .5s;
-}
+  .click-freelance~.portfolio-overlay{
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .5s, visibility 0s 0.5s;
+    transition: opacity .5s, visibility 0s .5s;
+  }
 
-#freelancemodal:checked~.portfolio-overlay{
-  z-index: 89;
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
+  #freelancemodal:checked~.portfolio-overlay{
+    z-index: 89;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
 
 /*- - - - - - - - - LEWAGON MODAL*/
-.click-lewagon~.portfolio-overlay{
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity .5s, visibility 0s 0.5s;
-  transition: opacity .5s, visibility 0s .5s;
-}
+  .click-lewagon~.portfolio-overlay{
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .5s, visibility 0s 0.5s;
+    transition: opacity .5s, visibility 0s .5s;
+  }
 
-#lewagonmodal:checked~.portfolio-overlay{
-  z-index: 89;
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
+  #lewagonmodal:checked~.portfolio-overlay{
+    z-index: 89;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
 
 /*- - - - - - - - - HORIZONS MODAL*/
 
-.click-horizons~.portfolio-overlay{
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity .5s, visibility 0s 0.5s;
-  transition: opacity .5s, visibility 0s .5s;
-}
+  .click-horizons~.portfolio-overlay{
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .5s, visibility 0s 0.5s;
+    transition: opacity .5s, visibility 0s .5s;
+  }
 
-#horizonsmodal:checked~.portfolio-overlay{
-  z-index: 89;
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
+  #horizonsmodal:checked~.portfolio-overlay{
+    z-index: 89;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
+
+
+/*- - - - - - - - - - - - Carousel*/
+
+ .item-image {
+    border: 10px solid black;
+    border-radius: 5px;
+    min-height: 667px;
+    min-width: 375px;
+    position: relative;
+    padding-bottom: 65%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+
 
 /* - - MEDIA - -
 
