@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 40vh;
+    min-height: 100vh;
   }
 
   .banner-right {
@@ -29,7 +29,7 @@
     justify-content: center;
     align-items: center;
     text-align: right;
-    height: 80vh;
+    height: 100vh;
   }
 
   .icon-links {
@@ -365,7 +365,7 @@ input {
   }
 
 
-/* - - MEDIA - -
+/*- - - - - - MEDIA*/
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
@@ -386,15 +386,19 @@ input {
   }
 }
 
-/*  p:hover {
-  color: #16087C;
-  font-size: 15px;
- }*/
 
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
     width: 340px;
+  }
+
+  .work-card{
+    height: 100vh;
+  }
+
+  .card-image{
+    height: 100vh;
   }
 }
 
