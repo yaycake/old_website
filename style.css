@@ -304,6 +304,10 @@ input {
     transition: opacity 0.5s;
   }
 
+  #yaochimamodal:checked<.portfolio-overlay<.work-card<.col-xs-12.col-sm-6.col-md-4<.row<.work-grid<.scroll-container{
+    display: hidden;
+  }
+
 /*- - - - - - - - - - STICKER MODAL*/
 
   .click-sticker~.portfolio-overlay{
@@ -319,6 +323,10 @@ input {
     visibility: visible;
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
+  }
+
+  #stickermodal:checked<.portfolio-overlay<.work-card<.col-xs-12.col-sm-6.col-md-4<.row<.work-grid<.scroll-container{
+    display: hidden;
   }
 
 /*- - - - - - - - JOURNEY MODAL*/
@@ -338,6 +346,10 @@ input {
     transition: opacity 0.5s;
   }
 
+  #yaochimamodal:checked<.portfolio-overlay<.work-card<.col-xs-12.col-sm-6.col-md-4<.row<.work-grid<.scroll-container{
+    display: hidden;
+  }
+
 /*- - - - - - - - FREELANCE MODAL*/
   .click-freelance~.portfolio-overlay{
     opacity: 0;
@@ -352,6 +364,10 @@ input {
     visibility: visible;
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
+  }
+
+  #freelancemodal:checked<.portfolio-overlay<.work-card<.col-xs-12.col-sm-6.col-md-4<.row<.work-grid<.scroll-container{
+    display: hidden;
   }
 
 /*- - - - - - - - - LEWAGON MODAL*/
@@ -370,6 +386,10 @@ input {
     transition: opacity 0.5s;
   }
 
+  #lewagonmodal:checked<.portfolio-overlay<.work-card<.col-xs-12.col-sm-6.col-md-4<.row<.work-grid<.scroll-container{
+    display: hidden;
+  }
+
 /*- - - - - - - - - HORIZONS MODAL*/
 
   .click-horizons~.portfolio-overlay{
@@ -385,6 +405,10 @@ input {
     visibility: visible;
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
+  }
+
+  #horizonsmodal:checked<.portfolio-overlay<.work-card<.col-xs-12.col-sm-6.col-md-4<.row<.work-grid<.scroll-container{
+    display: hidden;
   }
 
 /*- - - - - - - - - - - - Carousel*/
