@@ -9,6 +9,17 @@
     line-height: 1.8;
   }
 
+  .scroll-container{
+    overflow: auto;
+    -webkit-overflow-scrolling:touch;
+    /*scroll-snap-type-y:; mandatory;*/
+
+    }
+
+  .scroll-area{
+    /*scroll-snap-align: start;*/
+  }
+
 
 /*- - - - - - - - - LANDING BANNER*/
 
@@ -121,11 +132,6 @@
   .portfolio-right{
     margin-top: 5rem;
   }
-
- /* .circle {
-    border-radius: 50%;
-    background-color: black;
-  }*/
 
   .portfolio-center{
     margin-top: 5rem;
@@ -372,7 +378,7 @@ input {
   .footer-left{
     background-color: black;
     color: white;
-    min-height: 30vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -381,7 +387,7 @@ input {
 
   .footer-right{
     text-align: right;
-    min-height: 30vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
