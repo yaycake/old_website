@@ -105,8 +105,6 @@
    }
 
 
-
-
 /*- - - - - - - - - - - WORK PORTFOLIO GRID*/
 
   .work-grid {
@@ -154,8 +152,6 @@
    .menu-icon {
 
    }
-
-
 
   .close-window {
     position: absolute;
@@ -240,56 +236,56 @@
 
 /*/*- - - - - - - - - -PORTFOLIO OVERLAY*/
 
-input {
-  display: none;
-}
+  input {
+    display: none;
+  }
 
-.click-yaochima {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .click-yaochima {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.portfolio-links>ul{
-  list-style: none;
-}
+  .portfolio-links>ul{
+    list-style: none;
+  }
 
-.portfolio-overlay{
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(255,255,255,1);
-  overflow-y: scroll;
+  .portfolio-overlay{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,1);
+    overflow-y: scroll;
 
-  -webkit-overflow-scrolling:touch;
-}
+    -webkit-overflow-scrolling:touch;
+  }
 
-.portfolio-overlay label{
-  width: 58px;
-  height: 58px;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  z-index: 999;
-  cursor: pointer;
-}
+  .portfolio-overlay label{
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 999;
+    cursor: pointer;
+  }
 
-.card-label{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-}
+  .card-label{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
 
-.card-image{
-  text-align: center;
-}
+  .card-image{
+    text-align: center;
+  }
 
 /*- - - - - - YAOCHIMA MODAL*/
 
@@ -343,7 +339,7 @@ input {
   }
 
   #stickermodal:checked~.portfolio-overlay{
-    z-index: 89;
+    z-index: 3;
     opacity: 1;
     visibility: visible;
     -webkit-transition: opacity 0.5s;
@@ -369,7 +365,7 @@ input {
   }
 
   #journeymodal:checked~.portfolio-overlay{
-    z-index: 89;
+    z-index: 3;
     opacity: 1;
     visibility: visible;
     -webkit-transition: opacity 0.5s;
@@ -385,7 +381,7 @@ input {
   }
 
   #freelancemodal:checked~.portfolio-overlay{
-    z-index: 89;
+    z-index: 3;
     opacity: 1;
     visibility: visible;
     -webkit-transition: opacity 0.5s;
@@ -401,7 +397,7 @@ input {
   }
 
   #lewagonmodal:checked~.portfolio-overlay{
-    z-index: 89;
+    z-index: 4;
     opacity: 1;
     visibility: visible;
     -webkit-transition: opacity 0.5s;
@@ -418,7 +414,7 @@ input {
   }
 
   #horizonsmodal:checked~.portfolio-overlay{
-    z-index: 89;
+    z-index: 4;
     opacity: 1;
     visibility: visible;
     -webkit-transition: opacity 0.5s;
@@ -485,10 +481,16 @@ input {
     transition: opacity .5s, visibility 0s .5s;
     /*color: white;*/
     text-align: center;
+    z-index: 2;
+  }
+
+  .hidden-contact>div>a{
+    text-decoration: none;
+    color: black;
   }
 
   #contact-show:checked~.hidden-contact{
-    z-index: 101;
+    z-index: 6;
     opacity: 1;
     visibility: visible;
     -webkit-transition: opacity 0.5s;

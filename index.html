@@ -89,7 +89,6 @@
           </div>
           <!-- - YAOCHIMA PORTFOLIO OVERLAY   -->
           <div class="portfolio-overlay yao-portfolio">
-
             <label for="yaochimamodal">
               <h4>X</h4>
             </label>
@@ -692,10 +691,18 @@
           <h4 style="padding: 1rem 3rem; color: white; background-color: black; border-radius: 3rem;">Contact Grace</h4>
           </label>
           <div class="hidden-contact">
-            <div>im<img class="icons-footer" src="images/icon-sm-at.svg">thegraceyang.com </br><img class="icons-footer" src="images/icon-sm-wechat.svg">yay_cake</div>
-         </div>
+            <div>
+              <a href="mailto:im@thegraceyang.com">
+                im<img class="icons-footer" src="images/icon-sm-at.svg">thegraceyang.com
+              </a>
+            </br><img class="icons-footer" src="images/icon-sm-wechat.svg">yay_cake
+            </div>
+          </div>
+          <h4> Designed + Coded By Me</h4>
+          <div>
+            <img class="icons-footer" src="images/icon-heart.png">
+          </div>
 
-         <h4>Designed + Coded By Me <img class="icons-footer" src="images/icon-heart.png"></h4>
       </div>
       </div>
       <!-- - - - - - - Footer Right -->
@@ -711,13 +718,14 @@
     </div>
   </div>
 
-
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+
+  <!-- - - - - - - - Portfolio Carousel Timing -->
   <script>
     $( document ).ready(function() {
       $('.carousel').carousel({
@@ -726,17 +734,11 @@
     });
   </script>
 
+  <!-- - - - - - - - -  Disable Body Scroll When Overlay Checked -->
   <script>
-
     const bodyback = document.getElementById("bodyback")
     const allInputs = document.querySelectorAll("input")
     const allModals = [allInputs[0], allInputs[1], allInputs[2], allInputs[3], allInputs[4], allInputs[5]]
-
-    console.log("inputs");
-    console.log(allInputs);
-
-    console.log('all Modals')
-    console.log(allModals)
 
      allModals.forEach((modal) => {
       modal.addEventListener("click", (event) => {
@@ -744,19 +746,6 @@
         bodyback.classList.toggle("scroll-no-scroll")
       })
      })
-
-    // const yaochima = document.getElementById("yaochimamodal")
-    // const yaoOverlay = document.getElementById("yao-portfolio")
-
-
-    // THIS WORKS
-    // yaochimamodal.addEventListener("click", (event) => {
-    //   console.log(event);
-    //   console.log(event.currentTarget);
-    //   bodyback.classList.toggle("scroll-no-scroll");
-
-    // });
-
   </script>
 
 
