@@ -302,7 +302,7 @@ input {
 
   #yaochimamodal:checked~.portfolio-overlay{
     z-index: 88;
-    opacity: .4;
+    opacity: 1;
     visibility: visible;
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
