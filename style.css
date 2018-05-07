@@ -9,6 +9,7 @@
   body {
     margin: 0!important;
     height: 100%;
+    transition:all 200ms;
   }
 
   h1{
@@ -29,6 +30,18 @@
     align-items: center;
     min-height: 100vh;
   }
+
+  .banner-greeting>div{
+    display:block;
+  }
+
+  .banner-greeting>div>span{
+    font-size:5.3rem;
+    line-height: 1.8;
+    /*display:inline-block;*/
+    font-weight: bold;
+  }
+
 
 /*- - - - - - - BANNER ANIMATION*/
   .banner-greeting>h1, .banner-right>.icon-links, .banner-right>.landing-text {
@@ -94,6 +107,16 @@
    }
 
    .menu-link-icon{
+      /*border: 1rem solid black;*/
+      /*border-radius: 50%;*/
+      transition: ease 1s;
+      width: 3rem;
+      height: 3rem;
+
+   }
+
+   .menu-link-icon:active, .menu-link-icon:hover{
+    /*border: .5rem solid black;*/
     width: 4rem;
     height: 4rem;
    }
@@ -103,8 +126,6 @@
     bottom: 8rem;
     right: 9rem;*/
    }
-
-
 
 
 /*- - - - - - - - - - - WORK PORTFOLIO GRID*/
@@ -154,8 +175,6 @@
    .menu-icon {
 
    }
-
-
 
   .close-window {
     position: absolute;
@@ -240,56 +259,56 @@
 
 /*/*- - - - - - - - - -PORTFOLIO OVERLAY*/
 
-input {
-  display: none;
-}
+  input {
+    display: none;
+  }
 
-.click-yaochima {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .click-yaochima {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.portfolio-links>ul{
-  list-style: none;
-}
+  .portfolio-links>ul{
+    list-style: none;
+  }
 
-.portfolio-overlay{
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(255,255,255,1);
-  overflow-y: scroll;
+  .portfolio-overlay{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,1);
+    overflow-y: scroll;
 
-  -webkit-overflow-scrolling:touch;
-}
+    -webkit-overflow-scrolling:touch;
+  }
 
-.portfolio-overlay label{
-  width: 58px;
-  height: 58px;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  z-index: 999;
-  cursor: pointer;
-}
+  .portfolio-overlay label{
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 999;
+    cursor: pointer;
+  }
 
-.card-label{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-}
+  .card-label{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
 
-.card-image{
-  text-align: center;
-}
+  .card-image{
+    text-align: center;
+  }
 
 /*- - - - - - YAOCHIMA MODAL*/
 
@@ -318,11 +337,6 @@ input {
     height: 100%;
   }
 
-/*  #yaochimamodal<.work-card<.col-xs-12.col-sm-6.col-md-4.col-lg-4<.row<.work-grid{
-    border: 10px solid pink;
-    padding: 20rem;
-  }
-*/
 
 #yaochimamodal{
   border: 10px solid pink;
@@ -343,7 +357,7 @@ input {
   }
 
   #stickermodal:checked~.portfolio-overlay{
-    z-index: 89;
+    z-index: 3;
     opacity: 1;
     visibility: visible;
     -webkit-transition: opacity 0.5s;
@@ -369,7 +383,7 @@ input {
   }
 
   #journeymodal:checked~.portfolio-overlay{
-    z-index: 89;
+    z-index: 3;
     opacity: 1;
     visibility: visible;
     -webkit-transition: opacity 0.5s;
@@ -385,7 +399,7 @@ input {
   }
 
   #freelancemodal:checked~.portfolio-overlay{
-    z-index: 89;
+    z-index: 3;
     opacity: 1;
     visibility: visible;
     -webkit-transition: opacity 0.5s;
@@ -401,7 +415,7 @@ input {
   }
 
   #lewagonmodal:checked~.portfolio-overlay{
-    z-index: 89;
+    z-index: 4;
     opacity: 1;
     visibility: visible;
     -webkit-transition: opacity 0.5s;
@@ -418,7 +432,7 @@ input {
   }
 
   #horizonsmodal:checked~.portfolio-overlay{
-    z-index: 89;
+    z-index: 4;
     opacity: 1;
     visibility: visible;
     -webkit-transition: opacity 0.5s;
@@ -442,7 +456,16 @@ input {
 
 /*- - - - - - FOOTER*/
 
-  .footer{
+  #footer-contact-button{
+    padding: 1rem 3rem;
+    color: white;
+    background-color: black;
+    border-radius: 3rem;
+    transition: ease 2s;
+  }
+
+  #footer-contact-button:hover, #footer-contact-button:click{
+    padding: 1.5rem 3.5rem;
   }
 
   .footer-left{
@@ -485,10 +508,16 @@ input {
     transition: opacity .5s, visibility 0s .5s;
     /*color: white;*/
     text-align: center;
+    z-index: 2;
+  }
+
+  .hidden-contact>div>a{
+    text-decoration: none;
+    color: black;
   }
 
   #contact-show:checked~.hidden-contact{
-    z-index: 101;
+    z-index: 6;
     opacity: 1;
     visibility: visible;
     -webkit-transition: opacity 0.5s;

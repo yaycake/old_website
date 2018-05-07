@@ -46,7 +46,7 @@
       <!-- - - - - - - - - LEFT LANDING -->
       <div class="col-xs-12 col-md-6">
         <div class="banner-greeting">
-          <h1>Hello, </br> I'm </br> Grace</h1>
+            <h1>Hello, </br> I'm </br> Grace</h1>
         </div>
       </div>
       <!-- - - - - - - - - - - RIGHT LANDING -->
@@ -89,7 +89,6 @@
           </div>
           <!-- - YAOCHIMA PORTFOLIO OVERLAY   -->
           <div class="portfolio-overlay yao-portfolio">
-
             <label for="yaochimamodal">
               <h4>X</h4>
             </label>
@@ -689,13 +688,21 @@
           <input type="checkbox" id="contact-show"></input>
 
           <label class="footer-label" id="contact-info" for="contact-show">
-          <h4 style="padding: 1rem 3rem; color: white; background-color: black; border-radius: 3rem;">Contact Grace</h4>
+          <h4 id="footer-contact-button">Contact Grace</h4>
           </label>
           <div class="hidden-contact">
-            <div>im<img class="icons-footer" src="images/icon-sm-at.svg">thegraceyang.com </br><img class="icons-footer" src="images/icon-sm-wechat.svg">yay_cake</div>
-         </div>
+            <div>
+              <a href="mailto:im@thegraceyang.com">
+                im<img class="icons-footer" src="images/icon-sm-at.svg">thegraceyang.com
+              </a>
+            </br><img class="icons-footer" src="images/icon-sm-wechat.svg">yay_cake
+            </div>
+          </div>
+          <h4 style="color: lightgray;"> Designed + Coded By Me</h4>
+          <div>
+            <img style="opacity:.2;" class="icons-footer" src="images/icon-heart.png">
+          </div>
 
-         <h4>Designed + Coded By Me <img class="icons-footer" src="images/icon-heart.png"></h4>
       </div>
       </div>
       <!-- - - - - - - Footer Right -->
@@ -711,13 +718,14 @@
     </div>
   </div>
 
-
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+
+  <!-- - - - - - - - Portfolio Carousel Timing -->
   <script>
     $( document ).ready(function() {
       $('.carousel').carousel({
@@ -726,17 +734,11 @@
     });
   </script>
 
+  <!-- - - - - - - - -  Disable Body Scroll When Overlay Checked -->
   <script>
-
     const bodyback = document.getElementById("bodyback")
     const allInputs = document.querySelectorAll("input")
     const allModals = [allInputs[0], allInputs[1], allInputs[2], allInputs[3], allInputs[4], allInputs[5]]
-
-    console.log("inputs");
-    console.log(allInputs);
-
-    console.log('all Modals')
-    console.log(allModals)
 
      allModals.forEach((modal) => {
       modal.addEventListener("click", (event) => {
@@ -744,18 +746,103 @@
         bodyback.classList.toggle("scroll-no-scroll")
       })
      })
+  </script>
 
-    // const yaochima = document.getElementById("yaochimamodal")
-    // const yaoOverlay = document.getElementById("yao-portfolio")
+  <!-- - - - - - - experimental text -->
+  <script>
+    var Messenger = function(el){
+  'use strict';
+  var m = this;
 
+  m.init = function(){
+    m.codeletters = "&#*+%?£@§$";
+    m.message = 0;
+    m.current_length = 0;
+    m.fadeBuffer = false;
+    m.messages = [
+      'This is a message, which can be long and all.',
+      'This could be another message.',
+      'Also short ones work!',
+      'Cool.'
+    ];
 
-    // THIS WORKS
-    // yaochimamodal.addEventListener("click", (event) => {
-    //   console.log(event);
-    //   console.log(event.currentTarget);
-    //   bodyback.classList.toggle("scroll-no-scroll");
+    setTimeout(m.animateIn, 100);
+  };
 
-    // });
+  m.generateRandomString = function(length){
+    var random_text = '';
+    while(random_text.length < length){
+      random_text += m.codeletters.charAt(Math.floor(Math.random()*m.codeletters.length));
+    }
+
+    return random_text;
+  };
+
+  m.animateIn = function(){
+    if(m.current_length < m.messages[m.message].length){
+      m.current_length = m.current_length + 2;
+      if(m.current_length > m.messages[m.message].length) {
+        m.current_length = m.messages[m.message].length;
+      }
+
+      var message = m.generateRandomString(m.current_length);
+      $(el).html(message);
+
+      setTimeout(m.animateIn, 20);
+    } else {
+      setTimeout(m.animateFadeBuffer, 20);
+    }
+  };
+
+  m.animateFadeBuffer = function(){
+    if(m.fadeBuffer === false){
+      m.fadeBuffer = [];
+      for(var i = 0; i < m.messages[m.message].length; i++){
+        m.fadeBuffer.push({c: (Math.floor(Math.random()*12))+1, l: m.messages[m.message].charAt(i)});
+      }
+    }
+
+    var do_cycles = false;
+    var message = '';
+
+    for(var i = 0; i < m.fadeBuffer.length; i++){
+      var fader = m.fadeBuffer[i];
+      if(fader.c > 0){
+        do_cycles = true;
+        fader.c--;
+        message += m.codeletters.charAt(Math.floor(Math.random()*m.codeletters.length));
+      } else {
+        message += fader.l;
+      }
+    }
+
+    $(el).html(message);
+
+    if(do_cycles === true){
+      setTimeout(m.animateFadeBuffer, 50);
+    } else {
+      setTimeout(m.cycleText, 2000);
+    }
+  };
+
+  m.cycleText = function(){
+    m.message = m.message + 1;
+    if(m.message >= m.messages.length){
+      m.message = 0;
+    }
+
+    m.current_length = 0;
+    m.fadeBuffer = false;
+    $(el).html('');
+
+    setTimeout(m.animateIn, 200);
+  };
+
+  m.init();
+}
+
+console.clear();
+var messenger = new Messenger($('#messenger'));
 
   </script>
 
