@@ -9,6 +9,7 @@
   body {
     margin: 0!important;
     height: 100%;
+    transition:all 200ms;
   }
 
   h1{
@@ -29,6 +30,18 @@
     align-items: center;
     min-height: 100vh;
   }
+
+  .banner-greeting>div{
+    display:block;
+  }
+
+  .banner-greeting>div>span{
+    font-size:5.3rem;
+    line-height: 1.8;
+    /*display:inline-block;*/
+    font-weight: bold;
+  }
+
 
 /*- - - - - - - BANNER ANIMATION*/
   .banner-greeting>h1, .banner-right>.icon-links, .banner-right>.landing-text {
@@ -94,6 +107,16 @@
    }
 
    .menu-link-icon{
+      /*border: 1rem solid black;*/
+      /*border-radius: 50%;*/
+      transition: ease 1s;
+      width: 3rem;
+      height: 3rem;
+
+   }
+
+   .menu-link-icon:active, .menu-link-icon:hover{
+    /*border: .5rem solid black;*/
     width: 4rem;
     height: 4rem;
    }
@@ -314,11 +337,6 @@
     height: 100%;
   }
 
-/*  #yaochimamodal<.work-card<.col-xs-12.col-sm-6.col-md-4.col-lg-4<.row<.work-grid{
-    border: 10px solid pink;
-    padding: 20rem;
-  }
-*/
 
 #yaochimamodal{
   border: 10px solid pink;
@@ -438,7 +456,16 @@
 
 /*- - - - - - FOOTER*/
 
-  .footer{
+  #footer-contact-button{
+    padding: 1rem 3rem;
+    color: white;
+    background-color: black;
+    border-radius: 3rem;
+    transition: ease 2s;
+  }
+
+  #footer-contact-button:hover, #footer-contact-button:click{
+    padding: 1.5rem 3.5rem;
   }
 
   .footer-left{
