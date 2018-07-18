@@ -133,11 +133,11 @@
   .work-grid {
     position: relative;
     z-index: 99;
+
   }
 
   .work-card {
     cursor: pointer;
-
   }
 
   .card-image{
@@ -152,6 +152,9 @@
     padding-bottom: 100%;
   }
 
+  .card-label{
+     cursor: pointer;
+  }
 
 /*- - - - - - - - - - - PORTFOLIO OVERLAY*/
 
